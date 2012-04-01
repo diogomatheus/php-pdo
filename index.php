@@ -7,6 +7,7 @@ include_once('model/Post.php');
 $conn = new PDO(
     'mysql:host=localhost;port=3306;dbname=example-pdo', 'user', 'password'
 );
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Armazenar essa instância no Registry
 $registry = Registry::getInstance();
