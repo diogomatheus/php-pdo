@@ -1,4 +1,7 @@
 <?php
+/**
+ * @author   João Batista Neto
+ */
 
 class Registry {
        
